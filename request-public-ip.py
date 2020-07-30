@@ -34,7 +34,7 @@ def newSDDCPublicIP(proxy_url, sessiontoken, notes):
     print(json_response_status_code)
     return json_response_status_code
     
-Refresh_Token = "ß"
+Refresh_Token = ""
 ORG_ID = ""
 SDDC_ID = ""
     
