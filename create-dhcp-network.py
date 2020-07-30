@@ -21,7 +21,7 @@ def getNSXTproxy(org_id, sddc_id, sessiontoken):
     return proxy_url
 
 def newSDDCnetworks(proxy_url, sessiontoken, display_name, gateway_address, dhcp_range, domain_name, routing_type):
-    """ Creates a new SDDC Network. L2 VPN networks are not currently supported. """
+    """ Creates a new SDDC Network. """
     myHeader = {"Content-Type": "application/json","Accept": "application/json", 'csp-auth-token': sessiontoken}
     myURL = (proxy_url + "/policy/api/v1/infra/tier-1s/cgw/segments/" + display_name)
     json_data = {
